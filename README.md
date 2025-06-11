@@ -1,7 +1,8 @@
 Windows USB Bootável no Ubuntu
+====================================================
 Um script Bash robusto e automatizado para criar USB bootável do Windows em sistemas Ubuntu/Linux, seguindo as melhores práticas de segurança e compatibilidade.
-🚀 Características
 
+🚀 Características
 Automatização completa do processo de criação de USB bootável
 Particionamento GPT para compatibilidade com UEFI
 Duas partições otimizadas: FAT32 (boot) + NTFS (instalação)
@@ -11,9 +12,10 @@ Verificações de segurança para evitar perda acidental de dados
 Tratamento robusto de erros com rollback automático
 
 📋 Pré-requisitos
-Sistema Operacional
 
+Sistema Operacional
 Ubuntu 18.04+ ou distribuições baseadas em Debian
+
 Acesso root (sudo)
 
 Ferramentas Necessárias
@@ -23,10 +25,10 @@ sudo apt install parted dosfstools ntfs-3g rsync util-linux
 Hardware
 
 Pendrive USB com pelo menos 8GB (recomendado 16GB+)
+
 ISO oficial do Windows
 
 🛠️ Instalação
-
 Clone este repositório:
 
 bashgit clone https://github.com/seu-usuario/windows11-usb-creator.git
@@ -35,6 +37,7 @@ cd windows11-usb-creator
 Torne o script executável:
 
 bashchmod +x create_windows11_usb.sh
+
 📖 Uso
 Execução Básica
 bashsudo ./create_windows11_usb.sh
